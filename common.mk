@@ -219,10 +219,6 @@ PRODUCT_PACKAGES += \
     SecureElement \
     com.android.nfc_extras
 
-# Platform
-TARGET_BOARD_PLATFORM := msmnile
-TARGET_BOOTLOADER_BOARD_NAME := msmnile
-
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power@1.2.vendor

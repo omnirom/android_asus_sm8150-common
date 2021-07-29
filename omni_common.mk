@@ -1,0 +1,3 @@
+# Platform
+TARGET_BOARD_PLATFORM := msmnile
+TARGET_BOOTLOADER_BOARD_NAME := msmnile

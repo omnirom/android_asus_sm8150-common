@@ -40,7 +40,6 @@ ENABLE_CPUSETS := true
 ENABLE_SCHEDBOOST := true
 
 # Bootloader
-TARGET_BOOTLOADER_BOARD_NAME := msmnile
 TARGET_NO_BOOTLOADER := true
 
 # A/B
@@ -156,7 +155,6 @@ TARGET_COPY_OUT_VENDOR := vendor
 
 # Platform
 QCOM_HARDWARE_VARIANT := sm8150
-TARGET_BOARD_PLATFORM := msmnile
 TARGET_BOARD_PLATFORM_GPU := qcom-adreno640
 
 # Properties

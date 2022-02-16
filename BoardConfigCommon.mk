@@ -111,6 +111,7 @@ TARGET_USERIMAGES_SPARSE_EXT_DISABLED := false
 
 # Kernel
 BOARD_KERNEL_CMDLINE := \
+    androidboot.boot_devices=soc/1d84000.ufshc \
     androidboot.console=ttyMSM0 \
     androidboot.hardware=qcom \
     androidboot.memcg=1 \

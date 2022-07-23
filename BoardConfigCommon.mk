@@ -60,8 +60,10 @@ BOARD_HAVE_BLUETOOTH_QCOM := true
 QCOM_BT_USE_BTNV := true
 
 # Broken flags
+BUILD_BROKEN_DUP_RULES := true
 BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
 BUILD_BROKEN_ENFORCE_SYSPROP_OWNER := true
+BUILD_BROKEN_VENDOR_PROPERTY_NAMESPACE := true
 
 # charger
 HEALTHD_USE_BATTERY_INFO := true
@@ -75,6 +77,7 @@ endif
 
 # Display
 TARGET_USES_HWC2 := true
+TARGET_SCREEN_DENSITY := 420
 
 # DRM
 TARGET_ENABLE_MEDIADRM_64 := true
@@ -96,7 +99,7 @@ TARGET_USERIMAGES_SPARSE_EXT_DISABLED := false
 
 # Kernel
 BOARD_KERNEL_CMDLINE := console=ttyMSM0,115200n8 earlycon=msm_geni_serial,0xa90000 androidboot.hardware=qcom androidboot.console=ttyMSM0 androidboot.memcg=1 lpm_levels.sleep_disabled=1 video=vfb:640x400,bpp=32,memsize=3072000 msm_rtb.filter=0x237 service_locator.enable=1 swiotlb=2048 loop.max_part=7 androidboot.usbcontroller=a600000.dwc3
-#BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
+BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 BOARD_KERNEL_PAGESIZE := 4096
 BOARD_KERNEL_BASE := 0x00000000
 BOARD_KERNEL_TAGS_OFFSET := 0x00008000
@@ -117,11 +120,15 @@ BOARD_BUILD_SYSTEM_ROOT_IMAGE := true
 BOARD_BOOTIMAGE_PARTITION_SIZE := 100663296
 BOARD_FLASH_BLOCK_SIZE := 262144 # (BOARD_KERNEL_PAGESIZE * 64)
 BOARD_USES_METADATA_PARTITION := true
+BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4
 TARGET_COPY_OUT_VENDOR := vendor
 
 # Platform
 TARGET_BOARD_PLATFORM := msmnile
 TARGET_BOARD_PLATFORM_GPU := qcom-adreno640
+
+# Properties
+TARGET_ODM_PROP += $(COMMON_PATH)/odm.prop
 
 # Recovery
 BOARD_USES_RECOVERY_AS_BOOT := true
@@ -132,7 +139,8 @@ TARGET_USES_MKE2FS := true
 
 # Sepolicy
 include vendor/omni/sepolicy/sepolicy.mk
-include device/qcom/sepolicy_custom/SEPolicy.mk
+include device/qcom/sepolicy_vndr/SEPolicy.mk
+BOARD_VENDOR_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/vendor
 
 # Treble
 BOARD_VNDK_VERSION := current

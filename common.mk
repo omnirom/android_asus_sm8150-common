@@ -21,8 +21,10 @@ DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
     vendor/omni/overlay/CarrierConfig
 
+PRODUCT_PACKAGES += \
+    FrameworksResOverlay
+
 # VNDK
-PRODUCT_TARGET_VNDK_VERSION := 30
 PRODUCT_EXTRA_VNDK_VERSIONS := 30
 
 # A/B
@@ -32,7 +34,8 @@ AB_OTA_PARTITIONS += \
     boot \
     dtbo \
     system \
-    vbmeta
+    vbmeta \
+    vendor
 
 AB_OTA_POSTINSTALL_CONFIG += \
     RUN_POSTINSTALL_system=true \
@@ -49,6 +52,12 @@ PRODUCT_PACKAGES += \
 
 # Api
 PRODUCT_SHIPPING_API_LEVEL := 28
+
+# Audio
+PRODUCT_PACKAGES += \
+    android.hardware.audio@6.0-impl \
+    android.hardware.audio.effect@6.0-impl \
+    android.hardware.audio.service
 
 # Boot control
 PRODUCT_PACKAGES += \
@@ -71,15 +80,20 @@ PRODUCT_PACKAGES += \
 
 # Display
 PRODUCT_PACKAGES += \
-    libdisplayconfig.qti \
-    libgralloc.qti \
+    android.hardware.memtrack@1.0-impl \
+    android.hardware.memtrack@1.0-service \
     libion \
-    libqdMetaData \
     libtinyalsa \
     libtinyxml2
 
+$(call inherit-product, vendor/qcom/opensource/display/config/display-product-vendor.mk)
+$(call inherit-product, vendor/qcom/opensource/commonsys/display_custom/config/display-product-commonsys.mk)
+$(call inherit-product, vendor/qcom/opensource/commonsys-intf/display/config/display-interfaces-product.mk)
 $(call inherit-product, vendor/qcom/opensource/commonsys-intf/display/config/display-product-system.mk)
-$(call inherit-product, vendor/qcom/opensource/commonsys/display/config/display-product-commonsys.mk)
+
+# DRM
+PRODUCT_PACKAGES += \
+    android.hardware.drm@1.3-service.clearkey
 
 # Exclude vibrator from InputManager
 PRODUCT_COPY_FILES += \
@@ -92,6 +106,11 @@ PRODUCT_PACKAGES += \
     qcom.fmradio
 
 PRODUCT_BOOT_JARS += qcom.fmradio
+
+# Health
+PRODUCT_PACKAGES += \
+    android.hardware.health@2.1-impl \
+    android.hardware.health@2.1-service
 
 # HIDL
 PRODUCT_PACKAGES += \
@@ -107,6 +126,16 @@ PRODUCT_PACKAGES += \
     VisualizationWallpapers \
     librs_jni
 
+# Media
+PRODUCT_PACKAGES += \
+    libOmxAacEnc \
+    libOmxAmrEnc \
+    libOmxEvrcEnc \
+    libOmxG711Enc \
+    libOmxQcelp13Enc \
+    libavservices_minijail \
+    libstagefrighthw
+
 # NFC
 PRODUCT_PACKAGES += \
     NfcNci \
@@ -121,9 +150,6 @@ BOARD_PROPERTY_OVERRIDES_SPLIT_ENABLED := true
 PRODUCT_PACKAGES += \
     netutils-wrapper-1.0 \
     libandroid_net
-
-PRODUCT_PACKAGES += \
-    vndk_package
 
 # Remove unwanted packages
 PRODUCT_PACKAGES += \
@@ -170,11 +196,6 @@ PRODUCT_HOST_PACKAGES += \
 
 PRODUCT_PACKAGES_DEBUG += \
     update_engine_client
-
-# WiFi
-PRODUCT_PACKAGES += \
-    TetheringOverlay \
-    WifiOverlay
 
 # Wifi Display
 PRODUCT_PACKAGES += \

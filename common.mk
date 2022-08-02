@@ -222,6 +222,10 @@ PRODUCT_PACKAGES += \
     android.hardware.tetheroffload.config@1.0.vendor \
     android.hardware.tetheroffload.control@1.0.vendor
 
+# TrustedUI
+PRODUCT_PACKAGES += \
+    android.hidl.memory.block@1.0.vendor
+
 # Update engine
 PRODUCT_PACKAGES += \
     otapreopt_script \

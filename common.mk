@@ -251,11 +251,3 @@ PRODUCT_PACKAGES += \
     libwpa_client \
     wpa_supplicant \
     wpa_supplicant.conf
-
-# Wifi Display
-PRODUCT_PACKAGES += \
-    libavservices_minijail \
-    libnl \
-
-PRODUCT_BOOT_JARS += \
-    WfdCommon

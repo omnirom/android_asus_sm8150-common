@@ -240,8 +240,8 @@ PRODUCT_PACKAGES_DEBUG += \
     update_engine_client
 
 # Vibrator
-PRODUCT_PACKAGES += \
-    android.hardware.vibrator-V1-ndk_platform.vendor
+PRODUCT_COPY_FILES += \
+    prebuilts/vndk/v30/arm64/arch-arm64-armv8-a/shared/vndk-core/android.hardware.vibrator-V1-ndk_platform.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.vibrator-V1-ndk_platform.so
 
 # Wifi
 PRODUCT_PACKAGES += \

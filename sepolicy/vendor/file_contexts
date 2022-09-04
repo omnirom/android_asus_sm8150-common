@@ -16,6 +16,9 @@
 # Asus sp stuff
 /(vendor|system/vendor)/bin/sp                                                                     u:object_r:asus_sp_exec:s0
 
+# Awk
+/vendor/bin/awk                                                                                    u:object_r:vendor_toolbox_exec:s0
+
 # Camera
 /dev/stmvl53l1_ranging                                                                             u:object_r:asus_laser_device:s0
 /(vendor|system/vendor)/bin/lasercsc                                                               u:object_r:lasercsc_exec:s0

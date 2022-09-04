@@ -16,6 +16,9 @@
 # Asus sp stuff
 /(vendor|system/vendor)/bin/sp                                                                     u:object_r:asus_sp_exec:s0
 
+# Awk
+/vendor/bin/awk                                                                                    u:object_r:vendor_toolbox_exec:s0
+
 # Camera
 /dev/stmvl53l1_ranging                                                                             u:object_r:asus_laser_device:s0
 /(vendor|system/vendor)/bin/lasercsc                                                               u:object_r:lasercsc_exec:s0
@@ -30,7 +33,7 @@
 /sys/devices/virtual/extcon/vbus_liquid/stat                                                       u:object_r:vendor_sysfs_battery_supply:s0
 
 # Fingerprint
-/data/vendor/goodix/gf_data(/.*)?                                                                  u:object_r:vendor_goodix_data_file:s0
+/data/vendor/goodix(/.*)?                                                                          u:object_r:vendor_goodix_data_file:s0
 /dev/goodix_fp                                                                                     u:object_r:fingerprintd_device:s0
 
 # Files in rootfs

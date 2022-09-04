@@ -115,13 +115,18 @@ persist.vendor.asus.manual_rotate_180           u:object_r:vendor_asus_prop:s0
 persist.factoryota.reboot                       u:object_r:vendor_nfc_prop:s0
 persist.vendor.nfc.                             u:object_r:vendor_nfc_prop:s0
 
+# Radio
+vendor.tel.                                     u:object_r:radio_control_prop:s0
+ro.vendor.csc.modemhash1                        u:object_r:radio_control_prop:s0
+ro.vendor.csc.modemhash2                        u:object_r:radio_control_prop:s0
+
 # SIM Card active
 persist.vendor.asus.sim1.enabled                u:object_r:vendor_radio_prop:s0
 persist.vendor.asus.sim2.enabled                u:object_r:vendor_radio_prop:s0
 
 # SIM Card Present
-vendor.gsm.sim1.present                         u:object_r:vendor_radio_prop:s0
-vendor.gsm.sim2.present                         u:object_r:vendor_radio_prop:s0
+vendor.gsm.sim1.present                         u:object_r:radio_control_prop:s0
+vendor.gsm.sim2.present                         u:object_r:radio_control_prop:s0
 
 # Storage
 asus.storage.primary.status                     u:object_r:vendor_asus_storage_prop_2:s0

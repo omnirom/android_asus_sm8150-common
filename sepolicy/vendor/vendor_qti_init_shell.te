@@ -11,3 +11,6 @@ set_prop(vendor_qti_init_shell, vendor_ssr_prop)
 allow vendor_qti_init_shell asus_block_device:chr_file rw_file_perms;
 r_dir_file(vendor_qti_init_shell, bat_file)
 r_dir_file(vendor_qti_init_shell, demoapp_file)
+
+allow vendor_qti_init_shell bat_file:dir setattr;
+allow vendor_qti_init_shell bat_file:file setattr;

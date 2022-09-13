@@ -46,6 +46,12 @@ AB_OTA_POSTINSTALL_CONFIG += \
 PRODUCT_PACKAGES += \
     omnipreopt_script
 
+# Android Auto for Wireless
+ifeq ($(ROM_BUILDTYPE),$(filter $(ROM_BUILDTYPE),GAPPS))
+PRODUCT_PACKAGES += \
+    AndroidAutoStub
+endif
+
 # ANT+
 PRODUCT_PACKAGES += \
     AntHalService

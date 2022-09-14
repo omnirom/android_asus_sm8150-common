@@ -1,5 +1,6 @@
 # Asus default prop
 type asus_laservalue_prop, property_type;
+type asus_prop, property_type;
 type vendor_asus_prop, property_type;
 type vendor_asus_sp_prop, property_type;
 

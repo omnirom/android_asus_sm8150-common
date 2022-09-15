@@ -1,6 +1,16 @@
 # Asus googlekey config
 persist.google.assistant.enable                 u:object_r:system_prop:s0
 
+# AsusLogTool
+persist.vendor.dbg.                             u:object_r:system_prop:s0
+persist.vendor.port_bridge                      u:object_r:system_prop:s0
+persist.vendor.asus.gcf.mode                    u:object_r:radio_control_prop:s0
+persist.vendor.asus.amr2g.mode                  u:object_r:radio_control_prop:s0
+persist.vendor.asus.amr3g.mode                  u:object_r:radio_control_prop:s0
+persist.vendor.asus.psconfig.mode               u:object_r:radio_control_prop:s0
+# for antenna switch
+persist.vendor.radio.airplane_mode_on           u:object_r:radio_control_prop:s0
+
 # Asus sp
 ro.config.CID                                   u:object_r:vendor_asus_prop:s0
 ro.config.idcode                                u:object_r:vendor_asus_prop:s0
@@ -30,6 +40,8 @@ persist.asus.serialno                           u:object_r:vendor_asus_sp_prop:s
 asus.build.ext.version                          u:object_r:vendor_asus_sp_prop:s0
 asus.build.sub.version                          u:object_r:vendor_asus_sp_prop:s0
 vendor.asus.country.fp                          u:object_r:vendor_asus_sp_prop:s0
+persist.asus.                                   u:object_r:system_prop:s0
+persist.vendor.asus.                            u:object_r:system_prop:s0
 persist.vendor.asus.no.country                  u:object_r:vendor_asus_sp_prop:s0
 x-rr.                                           u:object_r:vendor_asus_sp_prop:s0
 

@@ -98,12 +98,28 @@ PRODUCT_PACKAGES += \
     android.hardware.memtrack@1.0-service \
     libion \
     libtinyalsa \
-    libtinyxml2
+    libtinyxml2 \
+    android.hardware.graphics.composer@2.4-service \
+    android.hardware.graphics.mapper@3.0-impl-qti-display \
+    android.hardware.graphics.mapper@4.0-impl-qti-display \
+    android.hardware.memtrack@1.0-impl \
+    android.hardware.memtrack@1.0-service \
+    gralloc.msmnile \
+    hwcomposer.msmnile \
+    libdisplaydebug \
+    libqdutils \
+    libsdmcore \
+    libsdmutils \
+    libvulkan \
+    vendor.qti.hardware.display.allocator-service
 
 $(call inherit-product, vendor/qcom/opensource/display/config/display-product-vendor.mk)
 $(call inherit-product, vendor/qcom/opensource/commonsys/display/config/display-product-commonsys.mk)
 $(call inherit-product, vendor/qcom/opensource/commonsys-intf/display/config/display-interfaces-product.mk)
 $(call inherit-product, vendor/qcom/opensource/commonsys-intf/display/config/display-product-system.mk)
+
+-include hardware/qcom-caf/sm8150/display/config/display-board.mk
+-include hardware/qcom-caf/sm8150/display/config/display-product.mk
 
 # DRM
 PRODUCT_PACKAGES += \
@@ -199,7 +215,8 @@ PRODUCT_COPY_FILES += \
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
-    $(LOCAL_PATH)
+    $(LOCAL_PATH) \
+    vendor/omni/build/soong
 
 # Systemhelper
 PRODUCT_PACKAGES += \

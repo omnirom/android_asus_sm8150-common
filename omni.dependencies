@@ -19,6 +19,13 @@
     "revision": "android-13.0"
    },
    {
+    "remote": "gitlab",
+    "repository": "android_hardware_qcom_display-sm8150",
+    "target_path": "hardware/qcom-caf/sm8150/display",
+    "override": "platform/hardware/qcom/display",
+    "revision": "android-13.0"
+   },
+   {
      "remote": "omnirom",
      "repository": "android_vendor_codeaurora_telephony",
      "target_path": "vendor/codeaurora/telephony",

@@ -75,6 +75,7 @@ ifeq ($(HOST_OS),linux)
 endif
 
 # Display
+TARGET_GRALLOC_HANDLE_HAS_NO_RESERVED_SIZE := true
 TARGET_USES_HWC2 := true
 TARGET_SCREEN_DENSITY := 420
 

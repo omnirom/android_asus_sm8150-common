@@ -161,6 +161,7 @@ TARGET_BOARD_PLATFORM_GPU := qcom-adreno640
 # Properties
 TARGET_ODM_PROP += $(COMMON_PATH)/odm.prop
 TARGET_PRODUCT_PROP += $(COMMON_PATH)/product.prop
+TARGET_SYSTEM_EXT_PROP += $(COMMON_PATH)/system_ext.prop
 
 # Recovery
 BOARD_USES_RECOVERY_AS_BOOT := true

@@ -17,3 +17,5 @@ allow system_app sysfs_mcu_version:file {read getattr setattr open};
 get_prop(system_app, vendor_asus_prop)
 
 allow system_app self:netlink_kobject_uevent_socket { bind create getopt read setopt };
+
+get_prop(system_app, vendor_odm_tel_prop)

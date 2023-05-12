@@ -23,5 +23,8 @@ type vendor_nfc_prop, property_type;
 type vendor_asus_storage_prop_2, property_type;
 type vendor_asus_storage_prop, property_type;
 
+# Telephony
+vendor_restricted_prop(vendor_odm_tel_prop)
+
 # Thermal
 type vendor_thermal_prop, property_type;

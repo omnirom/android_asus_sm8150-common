@@ -12,15 +12,17 @@ persist.vendor.asus.psconfig.mode               u:object_r:radio_control_prop:s0
 persist.vendor.radio.airplane_mode_on           u:object_r:radio_control_prop:s0
 
 # Asus sp
+persist.sys.setupwizard.active                  u:object_r:vendor_asus_prop:s0
 ro.config.CID                                   u:object_r:vendor_asus_prop:s0
 ro.config.idcode                                u:object_r:vendor_asus_prop:s0
 ro.config.versatility                           u:object_r:vendor_asus_prop:s0
 ro.config.revenuecountry                        u:object_r:vendor_asus_prop:s0
+ro.product.carrier                              u:object_r:vendor_asus_prop:s0
+ro.vendor.asus.phone.hac                        u:object_r:vendor_asus_prop:s0
+ro.vendor.asus.phone.tty                        u:object_r:vendor_asus_prop:s0
 ro.vendor.build.asus.                           u:object_r:vendor_asus_prop:s0
 
 ro.asus.product.mkt_name                        u:object_r:vendor_asus_sp_prop:s0
-ro.vendor.asus.phone.hac                        u:object_r:vendor_asus_sp_prop:s0
-ro.vendor.asus.phone.tty                        u:object_r:vendor_asus_sp_prop:s0
 ro.build.asus.fota                              u:object_r:vendor_asus_sp_prop:s0
 ro.build.csc.version                            u:object_r:vendor_asus_sp_prop:s0
 ro.build.asus.version                           u:object_r:vendor_asus_sp_prop:s0
@@ -148,7 +150,16 @@ asus.storage.primary.health                     u:object_r:vendor_asus_storage_p
 asus.storage.primary.healthtypeA                u:object_r:vendor_asus_storage_prop:s0
 asus.storage.primary.healthtypeB                u:object_r:vendor_asus_storage_prop:s0
 
+# Telephony
+persist.vendor.odm.tel.                         u:object_r:vendor_odm_tel_prop:s0
+ro.vendor.asus.network.types                    u:object_r:vendor_odm_tel_prop:s0
+ro.vendor.asus.phone.                           u:object_r:vendor_odm_tel_prop:s0
+vendor.odm.tel.                                 u:object_r:vendor_odm_tel_prop:s0
+vendor.telephony.default_network                u:object_r:vendor_odm_tel_prop:s0
+ro.vendor.odm.tel.                              u:object_r:vendor_odm_tel_prop:s0
+
 # Thermal
+ro.vendor.super                                 u:object_r:vendor_thermal_prop:s0
 ro.vendor.thermal                               u:object_r:vendor_thermal_prop:s0
 sys.thermal.dumpsys                             u:object_r:vendor_thermal_prop:s0
 vendor.thermal.                                 u:object_r:vendor_thermal_prop:s0

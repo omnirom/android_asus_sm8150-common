@@ -8,8 +8,15 @@ set_prop(vendor_init, vendor_asus_sp_prop)
 get_prop(vendor_init, vendor_camera_prop)
 set_prop(vendor_init, vendor_camera_prop)
 
-set_prop(vendor_init, vendor_asus_prop)
+get_prop(vendor_init, vendor_dts_audio_prop)
 set_prop(vendor_init, vendor_dts_audio_prop)
+
+get_prop(vendor_init, vendor_asus_prop)
+set_prop(vendor_init, vendor_asus_prop)
+
+get_prop(vendor_init, vendor_odm_tel_prop)
+set_prop(vendor_init, vendor_odm_tel_prop)
+
 set_prop(vendor_init, vendor_gx_fpd_prop)
 set_prop(vendor_init, vendor_health_prop)
 set_prop(vendor_init, vendor_thermal_prop)

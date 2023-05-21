@@ -33,6 +33,13 @@
     "revision": "android-13.0"
    },
    {
+    "remote": "omnirom",
+    "repository": "android_external_tinycompress",
+    "target_path": "external/tinycompress",
+    "override": "platform/external/tinycompress",
+    "revision": "android-13.0"
+   },
+   {
      "remote": "omnirom",
      "repository": "android_vendor_codeaurora_telephony",
      "target_path": "vendor/codeaurora/telephony",

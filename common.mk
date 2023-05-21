@@ -142,6 +142,9 @@ PRODUCT_BOOT_JARS += qcom.fmradio
 PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0.vendor
 
+# GMS
+PRODUCT_GMS_CLIENTID_BASE := android-asus
+
 # GPS
 PRODUCT_PACKAGES += \
     android.hardware.gnss@2.1.vendor

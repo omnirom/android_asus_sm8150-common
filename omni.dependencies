@@ -20,6 +20,13 @@
    },
    {
     "remote": "gitlab",
+    "repository": "android_hardware_qcom_audio-sm8150",
+    "target_path": "hardware/qcom-caf/sm8150/audio",
+    "override": "platform/hardware/qcom/audio",
+    "revision": "android-13.0"
+   },
+   {
+    "remote": "gitlab",
     "repository": "android_hardware_qcom_display-sm8150",
     "target_path": "hardware/qcom-caf/sm8150/display",
     "override": "platform/hardware/qcom/display",

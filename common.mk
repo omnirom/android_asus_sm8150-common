@@ -66,7 +66,6 @@ PRODUCT_PACKAGES += \
     android.hardware.audio.service \
     audio.r_submix.default \
     audio.usb.default \
-    liba2dpoffload \
     libbatterylistener \
     libcirrusspkrprot \
     libcomprcapture \

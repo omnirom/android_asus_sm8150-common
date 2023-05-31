@@ -64,7 +64,6 @@ PRODUCT_PACKAGES += \
     android.hardware.audio@6.0-impl \
     android.hardware.audio.effect@6.0-impl \
     android.hardware.audio.service \
-    android.hardware.bluetooth.audio-impl \
     audio.r_submix.default \
     audio.usb.default \
     liba2dpoffload \

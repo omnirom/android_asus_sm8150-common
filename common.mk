@@ -64,6 +64,7 @@ PRODUCT_PACKAGES += \
     android.hardware.audio@6.0-impl \
     android.hardware.audio.effect@6.0-impl \
     android.hardware.audio.service \
+    audio.primary.msmnile \
     audio.r_submix.default \
     audio.usb.default \
     libbatterylistener \
@@ -77,6 +78,7 @@ PRODUCT_PACKAGES += \
     libqcomvoiceprocessing \
     libsndmonitor \
     libspkrprot \
+    libssrec \
     libvolumelistener
 
 # Authsecret

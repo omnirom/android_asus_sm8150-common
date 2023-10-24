@@ -156,13 +156,6 @@
     <!-- Does device supports fast charging ?  -->
     <bool name="config_FastChargingLedSupported">true</bool>
 
-    <!-- The list absolute paths of jar/apk files containing the device specific handlers,
-        delimited by File.pathSeparator, which defaults to ":" on Android  -->
-    <string name="config_deviceKeyHandlerLib" translatable="false">/system/priv-app/DeviceParts/DeviceParts.apk</string>
-    <!-- Full qualified name of the class that implements
-        com.android.internal.os.DeviceKeyHandler interface. -->
-    <string name="config_deviceKeyHandlerClass" translatable="false">org.omnirom.device.KeyHandler</string>
-
     <!-- Boolean indicating whether or not to revert to default country code when cellular
     radio is unable to find any MCC information to infer wifi country code from -->
     <bool translatable="false" name="config_wifi_revert_country_code_on_cellular_loss">false</bool>
@@ -173,8 +166,6 @@
     <!-- Boolean indicating whether the HWC setColorTransform function can be performed efficiently
          in hardware. -->
     <bool name="config_setColorTransformAccelerated">true</bool>
-
-    <bool name="config_proxiSensorWakupCheck">true</bool>
 
     <!-- Whether WiFi display is supported by this device.
          There are many prerequisites for this feature to work correctly.

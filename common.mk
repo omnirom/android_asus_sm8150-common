@@ -25,7 +25,8 @@ DEVICE_PACKAGE_OVERLAYS += \
     vendor/omni/overlay/CarrierConfig
 
 PRODUCT_PACKAGES += \
-    FrameworksResOverlay
+    FrameworksResOverlay \
+    OmniRomResInternalOverlay
 
 # VNDK
 PRODUCT_EXTRA_VNDK_VERSIONS := 30

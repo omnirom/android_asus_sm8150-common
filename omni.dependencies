@@ -3,27 +3,27 @@
     "remote": "omnirom",
     "repository": "android_device_qcom_caf-sepolicy",
     "target_path": "device/qcom/sepolicy",
-    "revision": "android-13.0"
+    "revision": "android-14.0"
    },
    {
     "remote": "omnirom",
     "repository": "android_device_qcom_sepolicy_vndr",
     "target_path": "device/qcom/sepolicy_vndr",
-    "revision": "android-13.0"
+    "revision": "android-14.0"
    },
    {
     "remote": "omnirom",
     "repository": "android_hardware_qcom_wlan",
     "target_path": "hardware/qcom-caf/wlan",
     "override": "platform/hardware/qcom/wlan",
-    "revision": "android-13.0"
+    "revision": "android-14.0"
    },
    {
     "remote": "gitlab",
     "repository": "android_hardware_qcom_audio-sm8150",
     "target_path": "hardware/qcom-caf/sm8150/audio",
     "override": "platform/hardware/qcom/audio",
-    "revision": "android-13.0"
+    "revision": "android-14.0"
    },
    {
     "remote": "gitlab",
@@ -37,7 +37,7 @@
     "repository": "android_external_tinycompress",
     "target_path": "external/tinycompress",
     "override": "platform/external/tinycompress",
-    "revision": "android-13.0"
+    "revision": "android-14.0"
    },
    {
      "remote": "omnirom",

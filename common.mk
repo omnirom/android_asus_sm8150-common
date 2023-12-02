@@ -77,7 +77,9 @@ PRODUCT_PACKAGES += \
     libqcomvoiceprocessing \
     libsndmonitor \
     libspkrprot \
-    libvolumelistener
+    libvolumelistener \
+    libcodec2_hidl@1.0.vendor \
+    libcodec2_vndk.vendor
 
 # Authsecret
 PRODUCT_PACKAGES += \

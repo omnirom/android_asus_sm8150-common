@@ -13,4 +13,5 @@ r_dir_file(vendor_qti_init_shell, bat_file)
 r_dir_file(vendor_qti_init_shell, demoapp_file)
 
 allow vendor_qti_init_shell bat_file:dir setattr;
-allow vendor_qti_init_shell bat_file:file setattr;
+allow vendor_qti_init_shell bat_file:file r_file_perms;
+allow vendor_qti_init_shell bat_file:chr_file rw_file_perms;

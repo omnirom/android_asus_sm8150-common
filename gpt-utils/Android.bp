@@ -17,6 +17,5 @@ cc_library {
         "gpt-utils.cpp",
         "recovery-ufs-bsg.cpp",
     ],
-    cflags: ["-D_BSG_FRAMEWORK_KERNEL_HEADERS"],
     vendor: true,
 }

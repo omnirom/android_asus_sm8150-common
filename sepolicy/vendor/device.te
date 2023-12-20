@@ -6,6 +6,6 @@ type asus_block_device, dev_type;
 type fingerprintd_device, dev_type;
 
 # Motor camera
-type asus_laser_device, dev_type;
+type asus_laser_device, dev_type, mlstrustedobject;
 type asus_motor_device, dev_type;
 type asus_sensors_device, dev_type;

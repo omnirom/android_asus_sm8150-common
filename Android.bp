@@ -1,7 +1,4 @@
 soong_namespace {
-    imports: [
-        "vendor/omni/build/soong",
-    ],
 }
 
 prebuilt_hidl_interfaces {

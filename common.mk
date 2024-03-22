@@ -243,8 +243,7 @@ PRODUCT_PACKAGES += \
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
-    $(LOCAL_PATH) \
-    vendor/omni/build/soong
+    $(LOCAL_PATH)
 
 # Systemhelper
 PRODUCT_PACKAGES += \

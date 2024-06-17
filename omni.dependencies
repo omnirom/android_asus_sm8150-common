@@ -69,6 +69,12 @@
      "revision": "android-12.0"
    },
    {
+    "remote": "gitlab",
+    "repository": "android_vendor_qcom_opensource_power",
+    "target_path": "vendor/qcom/opensource/power",
+    "revision": "android-14.0"
+   },
+   {
      "remote": "omnirom",
      "repository": "android_vendor_qcom_opensource_fm-commonsys",
      "target_path": "vendor/qcom/opensource/fm-commonsys",
